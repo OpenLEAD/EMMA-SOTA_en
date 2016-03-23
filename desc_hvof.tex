@@ -53,8 +53,8 @@ $3000^oC$, spraying the particles with 700 to 1000 m/s speed, and generating a
 The robotic manipulator must have 5 mm accuracy, and the spray gun should remain
 at a 230 to 240 mm distance with $90^o\pm 60^o$ angle in respect to the metallic
 surface plane. The end effector of the manipulator must control the spray
-gun at a constant 40 m/min speed and not stop during the process with the blade
-in its range (\textit{long stop}), otherwise coating material would
+gun at a constant 40 m/min speed, and should not stop during the process with
+the blade in its range (\textit{long stop}), otherwise coating material would
 accumulate.
 The end effector direction changes are considered \textit{long stop} too, thus
 direction changes should be made out of the blade range, or sacrifice plates
@@ -96,7 +96,8 @@ the environment. Therefore, some measures must be taken for the execution: the
 operation must be teleoperated; no human presence can be required; environment
 gases, humidity and temperature must be constantly monitored and controlled; the
 robotic manipulator should be sealed; %the wasted particles should be removed afer process (cleaning); 
-and system electric/electronic shutdown must be accompanied by gas cutting.
+and system electric/electronic shutdown must be accompanied by gas cutting. Table~\ref{tab::hvof} summarizes the project restrictions and
+specifications.
 %Em relação às condições de operação: o espaço da aplicação HVOF é confinado,
 %com excesso (100 a 140 dB), gases nocivos e com risco de explosão podem
 %ser exalados; a pá pode atingir temperaturas de até $110^oC$; as condições de
@@ -116,33 +117,31 @@ and system electric/electronic shutdown must be accompanied by gas cutting.
 %realiza a medida de porosidade, oxidação, dureza e rugosidade da superfície. O
 %processo é realizado manualmente, de maneira rápida e fácil, por um operador.
 
-
-The table~\ref{tab::hvof} summarizes the project restrictions and specifications:
 %A tabela~\ref{tab::hvof} resume as restrições e especificações do
 %projeto:
 
-\begin{center}
-\begin{tabular}{  c | c  }
-  \hline
-  \textbf{Component} & \textbf{Data} \\ \hline
-  Spray gun mass & 8 Kg  \\ \hline
-  Cables mass & 12 Kg  \\ \hline
- % Processing time per blade & 12 hours \\ \hline
-  Flame temperature & $3000^oC$ \\ \hline
-  Spray gun recoil & 15 N \\ \hline
-  Manipulator precision & 5 mm \\ \hline
-  Spray gun to blade distance & 230-240 mm \\ \hline
-  Spray gun to blade angle & $30^o$-$90^o$ \\ \hline
-  Manipulator velocity & 40 m/min \\ \hline
-  HVOF sound noise & 100 a 140 dB \\ \hline
-  Blade temperature & up to $110^oC$ \\
-  \hline
-\end{tabular}
-\captionof{table}{HVOF process data}
-%\caption{Dados principais do processo de metalização HVOF}
+\begin{table}
+% table caption is above the table
+\caption{HVOF process data}
 \label{tab::hvof}
-\end{center}
 
+\begin{tabular}{ll}
+\hline\noalign{\smallskip}
+Component & Data \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Spray gun mass & 8 Kg  \\
+Cables mass & 12 Kg  \\
+Flame temperature & $3000^oC$ \\
+Spray gun recoil & 15 N \\
+Manipulator precision & 5 mm \\
+Spray gun to blade distance & 230-240 mm \\
+Spray gun to blade angle & $30^o$-$90^o$ \\
+Manipulator velocity & 40 m/min \\
+HVOF sound noise & 100 a 140 dB \\ 
+Blade temperature & up to $110^oC$ \\
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table}
 
 %\begin{center}
 %\begin{tabular}{  c | c  }
