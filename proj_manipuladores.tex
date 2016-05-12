@@ -139,29 +139,7 @@ horizontally and vertically (Fig.~\ref{fig::rail2}).
 	\caption{Positioning rail behind the blade.}
 	\label{fig::rail2}
 \end{figure}
-%Posicionar de maneira fixa um manipulador com base magnética à frente e atrás
-% da pá para a metalização é uma solução natural, já que é semelhante à utilizada pela
-%empresa Rijeza atualmente. Um estudo puramente geométrico, utilizando as
-%dimensões da pá, mostra que o manipulador deve possuir alcance de 1.7 m e ser
-%posicionado a uma altura de 1.1 m em relação ao solo. Estudos de espaço de
-%trabalho, manipulabilidade e colisões devem ser realizados para confirmar o
-%estudo geométrico.
 
-This design also requires the implementation of a localization/calibration
-system, as the robot must know its location in relation to the blade for
-autonomous operation. The localization requires external sensors, as cameras, a
-3D laser for mapping, a point laser sensor installed on the manipulator's
-end effector, and base odometry for position feedback.
-
-In this solution, a robot placed on a rail type base, on the floor, can not coat
-the blades on top, thus the turbine must be manually rotated and a new
-calibration process should be done for each step.
-
-%O posicionamento do sistema à frente ou atrás da pá exige
-%intervenções para rotação da turbina e para o deslocamento do sistema. Em
-% relação a um sistema com base autônoma entre as pás, o processo parece mais custoso em
-%intervenções manuais e mais demorado, porém bem mais simples em termos de
-%robótica.
 
 \paragraph{Solution conclusion}
 In terms of robotics, industrial manipulators on a rail base is the simplest
@@ -169,25 +147,3 @@ among all solutions for the bottom hatch. There is no mechanical design for the
 manipulator, since it will be acquired in one of the aforementioned
 manufacturers, but the mechanics will be responsible for the base design (rigid
 and modular), the magnetic couplings, and logistics.
-
-%In
-%addition, the following steps should be done:
-%manipulator control, data processing, calibration, path planning and UI.
-
-%A utilização de manipuladores industriais é a mais simples, em termos de
-%sistemas robóticos, dentre todas as soluções para o acesso pela escotilha
-%inferior.
-
-%Não há projeto mecânico do manipulador, já que este será adquirido em um dos
-% fabricantes citados. As dificuldades mecânicas do projeto serão em relação à logística de posicionamento e movimentação do robô dentro do aro câmara, e no desenvolvimento de uma base,
-%que pode ser autônoma. Além disso, o projeto fica responsável pelo controle do
-%manipulador, processamento de dados que envolvem o HVOF, planejamento de
-%trajetórias e UI.
-
-%The main challenge is to build a rigid base and the locomotion of
-%Equipment for the ring chamber. This conceptual design will be one of fronts to
-%the feasibility study.
-
-%Os desafios consistem na construção de uma base rígida e a locomoção dos
-%equipamentos pelo aro câmara. Este projeto conceitual será uma das frentes para
-%o estudo de viabilidade.
