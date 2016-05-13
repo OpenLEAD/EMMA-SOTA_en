@@ -1,12 +1,12 @@
 \subsection{Top hatch}
-The top hatch, localized at the top of the Runner area, has only 357 mm
+The top hatch, at the top of the runner area, has only 357 mm
 diameter (Fig.~\ref{fig::ambiente3d}). Using the top hatch as
-the access for the robot has the following advantages: robot fixation stability,
-reference point (facilitating localization system, mapping, control and
-calibration), built logistics (conveyor gantry to position the robot and the
-HVOF system); and the following disadvantages: difficulty in finding robots of
-such size (357 mm diameter), the robot must be removed to rotate the blades, and
-it is not a general solution (specific to Jirau installations).
+the access for the robot has the following advantages: base stiffness (robot
+fixation stability), fixed reference point (facilitating localization system,
+mapping, control and calibration), built logistics (conveyor gantry to position
+the robot and the HVOF system); and the following disadvantages: robot
+size (only 357 mm diameter), system must be removed to rotate the blades, and it
+is not a general solution (specific to Jirau installations).
 %Essa escotilha localizada no topo do aro câmara possui uma abertura de apenas
 %35 cm de diâmetro, o que cria um desafio quando se pensa em utiliza-la como
 %ponto de acesso para um robô. Por outro lado sua proximidade às pás e a área
@@ -33,11 +33,13 @@ Climbers and rail systems are not suitable for the top hatch due to
 its dimension. These solutions will be detailed in Section~\ref{bottom}, since
 the top hatch do not pose logistic gain for these approaches.
 
-The proposed solution for this access point is to use na industrial manipulator
-that fits through the hatch, anchored on the external part of the turbine.  The choice of the robot is primarily associated with reach, but
-only a small share of commercial robots has the dimension to fit the top hatch restriction.
-Thus, the study was focused on the KUKA Light Weight (LBR iiwa 14 R820), robot whose base
-diagonal is less than 357 mm.
+The proposed solution for this access point is to use an industrial manipulator
+that fits through the hatch, anchored on the external part of the turbine.  The
+choice of the robot is primarily associated with reach, but only a small share
+of off-the-shelf manipulators can fit. Thus, the study was focused on the KUKA
+Light Weight (LBR iiwa 14 R820), which weighs 30 kg, has seven joints and 14 kg payload, enough to
+carry the coating equipment, but further dynamics tests should be done to
+validate the robot, at the speed and accuracy required.
 
 %A solução mais simples para este acessso é a utilização de um robô industrial
 %comercial. A escolha do robô está primariamente associada ao seu alcance. Por
@@ -46,30 +48,23 @@ diagonal is less than 357 mm.
 %KUKA Light Weight (LBR iiwa 14 R820), robô cuja diagonal da base é inferior aos
 %35 cm da escotilha.
 
-
-The LBR R820 weighs 30 kg, has seven joints and has 14 kg payload, enough to
-carry the coating equipment. However, further studies are needed to validate
-the robot, on the speed and precision requirements when coating.
-
 %O LBR R820 pesa 30 kg, possui 7 eixos e suporta carga de 14kg,
 %suficiente por uma pequena margem para carregar o equipamento de
 %revestimento. Entretanto, são necessários estudos aprofundados para valida-lo,
 %como os requisitos de velocidade e precisão quando percorrendo a trajetória
 %para a realização do revestimento.
 
-To place the LBR R820 in a position where it is able to process all the
-blade, a hinged base model was proposed. The base consists of three telescopic
-links interconnected by a revolute joint, and the first link is attached to the
-top hatch itself. To cover the entire blade, the base must be able to assume different angles with
-respect to the insertion axis, the links must be telescopic type with
-prismatic joints.  
-
-The base's structure would consist of cylinders with maximized diameter and
-small thickness, which features a high polar moment of inertia and light weight,
-providing great bending stiffness, and minimizing positioning errors and
-excessive vibration. A recirculating ball actuator was chosen for low
-backlash and high precision. Fig.~\ref{fig::baselbr} shows the manipulator'
-base concept in two configurations: retracted and extended.
+To place the LBR in a position where it is able to process all the
+blade, a hinged base model was proposed. The mechanical system consists of three
+telescopic links interconnected by a revolute joint, and the first link is attached to the
+top hatch itself. To cover the entire blade, the mechanical base must be able to
+assume different angles with respect to the insertion axis, and the base's links
+must be telescopic with prismatic joints. The links are cylinders with maximized
+diameter at low thickness, which features a high polar moment of inertia and
+light weight, providing great bending stiffness, and minimizing positioning
+errors and excessive vibration. A recirculating ball actuator was chosen for
+low backlash and high precision. Fig.~\ref{fig::baselbr} shows the mechanical
+system concept in two configurations: retracted and extended.
 
 %A base consiste em 3 braços
 %telescópicos que permitem a extensão do sistema para prover o alcance
@@ -112,8 +107,8 @@ base concept in two configurations: retracted and extended.
 The main components of the base are shown in Fig.~\ref{fig::baselbr}: 1) worm
 gear linear actuator; 2) fixed base; 3) prismatic arm \#1; 4) prismatic arm \#2;
 5) linear actuators; 6) revolute joint; 7) prismatic arm \#3.
-Fig.~\ref{fig::base_ambiente3d_recolhida} shows the base and LBR R820
-manipulator.
+Fig.~\ref{fig::base_ambiente3d_recolhida} shows the mechanical system and the
+LBR R820 manipulator.
 
 %Os componentes principais da base estão representados nas
 %figuras~\ref{fig::base_recolhida} e~\ref{fig::base_extendida}, são: 1) atuador
@@ -153,13 +148,12 @@ manipulator.
 %eixo de inserção, e a junta que conecta os dois segmentos da base também
 % precisa ter sua posição alterada, o que pode ser realizado manualmente ou com atuador.
 
-Inserting the system, composed of the base and manipulator, in the top
-hatch, requires special care, as the system total length is greater
-than the distance from the top of the Runner area to the turbine nose. In
-extended configuration, the arm and the base will need to be rotated during the
-insertion process, which will result in system's central mass misalignment with respect to the
-perpendicular axis of the hatch, thus it will require a guide to compensate
-the generated torque.
+Inserting the mechanical system and the manipulator in the top hatch requires
+special care, as the system total length is greater than the distance from the
+top of the runner area to the turbine nose. In extended configuration, the arm
+and the base will need to be rotated during the insertion, which will result in
+system's central mass misalignment with respect to the perpendicular axis of
+the hatch, which demands compensations to the generated torque.
 
 %Introduzir o robô, composto pelo conjunto base-LBR R820, é uma tarefa cuidadosa
 %pois a extensão total será maior que a distância do topo do aro câmara ao
